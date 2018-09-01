@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/parent_layout">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/image"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/image"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp"
+        android:id="@+id/username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="42dp"
+        android:id="@+id/postdate"
+        android:text="19 May 2019"
+        android:textColor="@color/black"
+        android:layout_alignLeft="@+id/username" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="98dp"
+        android:text="Guys, has anyone been able to figure out the solution to question 24 in Chapter 3 (page 113). I'm kinda stuck there ie (x + 2)(x + 8)=14
+
+        This is a long long long long long text, no seriously, this is a really really long text."
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>

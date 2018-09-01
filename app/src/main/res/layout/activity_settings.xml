@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tcssi.fragments.MenuItems.SettingsActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarid"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="0dp"
+            >
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_backarrow"
+                android:layout_margin="5dp"/>
+
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+        </android.support.design.widget.AppBarLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Walk me through this app"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/toWalkThrough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Walk Through"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_login_shape"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/accountSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Setup"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_login_shape"
+        android:textColor="@color/white"/>
+</RelativeLayout>

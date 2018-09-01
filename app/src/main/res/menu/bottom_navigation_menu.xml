@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_notif"
+        android:icon="@drawable/ic_notif"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/ic_cal"
+        android:icon="@drawable/ic_cal"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/ic_disc"
+        android:icon="@drawable/ic_disc"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/ic_msg"
+        android:icon="@drawable/ic_chat"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/ic_menu"
+        android:icon="@drawable/ic_menu"
+        android:title="">
+    </item>
+
+</menu>

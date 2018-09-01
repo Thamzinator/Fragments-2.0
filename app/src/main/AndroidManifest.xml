@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tcssi.fragments">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Calendar.CalendarActivity" />
+        <activity android:name=".Discussion.DiscussionActivity" />
+        <activity android:name=".Message.MessageActivity" />
+        <activity android:name=".Menu.MenuActivity" />
+        <activity
+            android:name=".MenuItems.QuizActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MenuItems.TutorActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity
+            android:name=".MenuItems.PastpaperActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity
+            android:name=".MenuItems.ApplicationsActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity
+            android:name=".EvaluationsActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity
+            android:name=".MenuItems.SnapActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity
+            android:name=".MenuItems.RecordActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity
+            android:name=".MenuItems.SettingsActivity"
+            android:parentActivityName=".Menu.MenuActivity" />
+        <activity android:name=".WalkthroughActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SetupActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".Discussion.NewPostActivity"
+            android:parentActivityName=".Discussion.DiscussionActivity" />
+        <activity android:name=".Discussion.DiscNotifActivity" />
+        <activity android:name=".Discussion.CommentsActivity" />
+        <activity android:name=".Profile" />
+        <activity android:name=".ProfileEditActivity"></activity>
+    </application>
+
+</manifest>

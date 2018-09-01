@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="23"
+       android:textSize="50dp"
+       android:textAlignment="center"
+       android:paddingTop="55dp"
+       android:textColor="@color/white"/>
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        app:mcv_arrowColor="@color/white"
+        app:mcv_dateTextAppearance="@android:style/TextAppearance.Inverse"
+        app:mcv_headerTextAppearance="@android:style/TextAppearance.Inverse"
+        app:mcv_selectionColor="@color/colorPrimary"
+        app:mcv_showOtherDates="all"
+        app:mcv_tileHeight="45dp"
+        app:mcv_weekDayTextAppearance="@android:style/TextAppearance.Inverse" />
+
+</LinearLayout>
