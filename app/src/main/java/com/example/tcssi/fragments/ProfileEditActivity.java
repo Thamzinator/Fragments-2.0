@@ -101,6 +101,8 @@ public class ProfileEditActivity extends AppCompatActivity {
                     userMap.put("surname", surname);
                     userMap.put("address", address);
                     userMap.put("birthday", birthday);
+                    mProgress.setVisibility(View.VISIBLE);
+                    mProgress.setEnabled(true);
 
                     mFirestore.collection("profiles").document(user_id).set(userMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -129,7 +131,7 @@ public class ProfileEditActivity extends AppCompatActivity {
 
     private void goToProfile() {
 
-        Intent toProfile = new Intent(ProfileEditActivity.this, Profile.class);
+        Intent toProfile = new Intent(ProfileEditActivity.this, SingleApplication.class);
         startActivity(toProfile);
         finish();
 

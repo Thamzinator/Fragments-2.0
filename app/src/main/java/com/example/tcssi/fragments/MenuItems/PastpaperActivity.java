@@ -20,6 +20,7 @@ import com.example.tcssi.fragments.ViewPagerAdapter;
 
 public class PastpaperActivity extends AppCompatActivity {
 
+    View view;
     private TabLayout tabLayout;
     private AppBarLayout appBarLayout;
     private ViewPager viewpager;
@@ -33,6 +34,9 @@ public class PastpaperActivity extends AppCompatActivity {
         appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
         viewpager = (ViewPager) findViewById(R.id.viewpager_id);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+
+        view = this.getWindow().getDecorView();
+        view.setBackgroundResource(R.drawable.edu_bg);
 
         // Adding the fragments
         adapter.AddFragment(new FragmentPersonal(), "Personal");

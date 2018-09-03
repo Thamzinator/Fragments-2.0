@@ -36,35 +36,49 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
-                android:text="Personal Details" />
+                android:text="Personal Details"
+                android:textColor="@color/white"
+                />
 
             <EditText
                 android:id="@+id/input_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Name"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:layout_marginRight="130dp"
+                />
 
             <EditText
                 android:id="@+id/input_surname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Surname"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:layout_marginRight="130dp"
+                />
 
             <EditText
                 android:id="@+id/input_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Address"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:textSize="12sp"
+                android:layout_marginRight="130dp"
+                />
 
             <EditText
                 android:id="@+id/input_birthday"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Date of birth.(dd/mm/yyyy)"
-                android:inputType="date" />
+                android:inputType="date"
+                android:textSize="12sp"
+                android:layout_marginRight="130dp"
+                />
 
             <Button
                 android:id="@+id/save_changes"

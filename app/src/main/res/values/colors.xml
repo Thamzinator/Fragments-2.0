@@ -22,5 +22,6 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorGrey">#4e4e4e</color>
     <color name="appbarBlack">#60000000</color>
+    <color name="luxury">#5E4D08</color>
 
 </resources>

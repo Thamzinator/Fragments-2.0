@@ -66,10 +66,6 @@
                 android:paddingRight="20dp"
                 />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/white"/>
 
             <EditText
                 android:id="@+id/user_conf_password"
@@ -82,11 +78,6 @@
                 android:paddingRight="20dp"
                 android:drawableLeft="@drawable/ic_pass"
                 android:drawablePadding="20dp"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/white"/>
 
             <EditText
                 android:id="@+id/user_password"

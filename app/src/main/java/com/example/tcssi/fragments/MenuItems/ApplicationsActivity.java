@@ -1,14 +1,18 @@
 package com.example.tcssi.fragments.MenuItems;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.example.tcssi.fragments.R;
+import com.example.tcssi.fragments.SingleApplication;
 import com.example.tcssi.fragments.item;
 
 import java.util.ArrayList;
@@ -41,7 +45,6 @@ public class ApplicationsActivity extends AppCompatActivity {
         Adapter adapter = new Adapter(this,mlist);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
 
 
     }

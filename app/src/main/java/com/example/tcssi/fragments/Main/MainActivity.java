@@ -19,7 +19,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         Log.d(TAG, "onCreate: Starting.");
 
-        Calligrapher calligrapher = new Calligrapher(this);
-        calligrapher.setFont(this, "roboto.ttf", true);
+       // Calligrapher calligrapher = new Calligrapher(this);
+        //calligrapher.setFont(this, "roboto.ttf", true);
 
         setupBottomNavigationView();
         setupViewPager();
