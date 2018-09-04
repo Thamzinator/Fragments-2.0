@@ -4,10 +4,13 @@
     <string name="quizzes">Quizzes</string>
     <string name="desc_quizes">Take your quizzes</string>
 
+    <string name="action_settings">Settings</string>
+
     <string name="tutor">Tutor Find</string>
     <string name="desc_tutor">Book a tutor to help</string>
 
     <string name="past_papers">Past Papers</string>
+    <string name="str_next">Next</string>
     <string name="desc_pastpapers">Get past papers here</string>
 
     <string name="snap_cards">Snap Cards</string>

@@ -25,7 +25,7 @@
         <activity android:name=".Message.MessageActivity" />
         <activity android:name=".Menu.MenuActivity" />
         <activity
-            android:name=".MenuItems.QuizActivity"
+            android:name=".Quiz.QuizActivity"
             android:parentActivityName=".Menu.MenuActivity" />
         <activity android:name=".LoginActivity" />
         <activity
@@ -62,7 +62,9 @@
         <activity android:name=".Discussion.CommentsActivity" />
         <activity android:name=".Profile" />
         <activity android:name=".ProfileEditActivity" />
-        <activity android:name=".SingleApplication"></activity>
+        <activity android:name=".SingleApplication" />
+        <activity android:name=".UnivList" />
+        <activity android:name=".Quiz.ResultActivity"></activity>
     </application>
 
 </manifest>

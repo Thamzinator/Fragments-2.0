@@ -116,7 +116,6 @@ public class ProfileEditActivity extends AppCompatActivity {
 
                                 Toast.makeText(ProfileEditActivity.this, "Error saving", Toast.LENGTH_LONG).show();
 
-
                             }
 
                         }
@@ -125,7 +124,6 @@ public class ProfileEditActivity extends AppCompatActivity {
 
             }
         });
-
 
     }
 

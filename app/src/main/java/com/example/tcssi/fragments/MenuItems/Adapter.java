@@ -11,9 +11,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.tcssi.fragments.R;
 import com.example.tcssi.fragments.SingleApplication;
+import com.example.tcssi.fragments.UnivList;
 import com.example.tcssi.fragments.item;
 
 import java.util.List;
@@ -40,7 +42,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull myViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull myViewHolder holder, final int position) {
         Log.d(TAG, "onBindViewHolder: initiated");
         holder.background_img.setImageResource(mData.get(position).getBackground());
         holder.tv_title.setText(mData.get(position).getApplicName());
@@ -48,8 +50,42 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder> {
         holder.tv_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent postIntent = new Intent(mContext, SingleApplication.class);
-                mContext.startActivity(postIntent);
+
+                if(position == 0){
+
+                    Toast.makeText(mContext, "Clicked universities", Toast.LENGTH_LONG).show();
+                    Intent postIntent = new Intent(mContext, UnivList.class);
+                    mContext.startActivity(postIntent);
+
+                }else if(position == 1){
+
+                    Toast.makeText(mContext, "Clicked Colleges" , Toast.LENGTH_LONG).show();
+                    Intent postIntent = new Intent(mContext, SingleApplication.class);
+                    mContext.startActivity(postIntent);
+                }else if(position == 2){
+
+                    Toast.makeText(mContext, "Clicked Accommodation" , Toast.LENGTH_LONG).show();
+                    Intent postIntent = new Intent(mContext, SingleApplication.class);
+                    mContext.startActivity(postIntent);
+                }else if(position == 3){
+
+                    Toast.makeText(mContext, "Clicked Textbooks", Toast.LENGTH_LONG).show();
+                    Intent postIntent = new Intent(mContext, SingleApplication.class);
+                    mContext.startActivity(postIntent);
+                }else if(position == 4){
+
+                    Toast.makeText(mContext, "Clicked Student Funding" , Toast.LENGTH_LONG).show();
+                    Intent postIntent = new Intent(mContext, SingleApplication.class);
+                    mContext.startActivity(postIntent);
+                }else if(position == 5){
+
+                    Toast.makeText(mContext, "Clicked Groceries" , Toast.LENGTH_LONG).show();
+                    Intent postIntent = new Intent(mContext, SingleApplication.class);
+                    mContext.startActivity(postIntent);
+
+                }
+
+
 
             }
         });
