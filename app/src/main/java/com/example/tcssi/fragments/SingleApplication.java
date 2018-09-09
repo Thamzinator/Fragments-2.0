@@ -1,7 +1,10 @@
 package com.example.tcssi.fragments;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -11,15 +14,28 @@ import technolifestyle.com.imageslider.FlipperView;
 public class SingleApplication extends AppCompatActivity {
 
     FlipperLayout flipper;
+    private Button toApplic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_application);
 
+        toApplic = findViewById(R.id.buttonUpload);
+
+        toApplic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toApplic = new Intent(SingleApplication.this, SubmitApplication.class);
+                startActivity(toApplic);
+            }
+        });
+
         flipper = findViewById(R.id.flipper);
         setLayout();
     }
+
+
 
     private void setLayout(){
 

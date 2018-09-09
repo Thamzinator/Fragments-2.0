@@ -20,7 +20,7 @@ public class DbHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "quizdb";
     private static final String DB_TABLE = "quiztable";
 
-    //table column names
+    //Table column names
     private static final String KEY_ID = "id";
     private static final String KEY_QUES = "question";
     private static final String KEY_ANSWER = "answer";

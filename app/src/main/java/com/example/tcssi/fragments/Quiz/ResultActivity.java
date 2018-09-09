@@ -28,14 +28,24 @@ public class ResultActivity extends AppCompatActivity {
         if(score == 0){
             img.setImageResource(R.drawable.score_0);
         }else if(score == 1){
-            img.setImageResource(R.drawable.score_1);
+            img.setImageResource(R.drawable.score_0);
         }else if(score == 2){
-            img.setImageResource(R.drawable.score_2);
+            img.setImageResource(R.drawable.score_1);
         }else if(score == 3){
-            img.setImageResource(R.drawable.score_3);
+            img.setImageResource(R.drawable.score_1);
         }else if(score == 4){
-            img.setImageResource(R.drawable.score_4);
+            img.setImageResource(R.drawable.score_2);
         }else if(score == 5){
+            img.setImageResource(R.drawable.score_2);
+        }else if(score == 6){
+            img.setImageResource(R.drawable.score_3);
+        }else if(score == 7){
+            img.setImageResource(R.drawable.score_3);
+        }else if(score == 8){
+            img.setImageResource(R.drawable.score_4);
+        }else if(score == 9){
+            img.setImageResource(R.drawable.score_4);
+        }else if(score == 10){
             img.setImageResource(R.drawable.score_5);
         }
     }

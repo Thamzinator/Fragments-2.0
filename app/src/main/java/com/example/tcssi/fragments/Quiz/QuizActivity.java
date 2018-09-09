@@ -30,7 +30,7 @@ public class QuizActivity extends AppCompatActivity {
     Question currentQuestion;
 
     TextView txtQuestion;
-    RadioButton rda,rdb,rdc;
+    RadioButton rda,rdb,rdc, rdd;
     Button butNext;
 
     @Override
@@ -70,7 +70,7 @@ public class QuizActivity extends AppCompatActivity {
             Log.d("Score", "Your score: "+score);
         }
 
-        if(quid<5){
+        if(quid<10){
             currentQuestion = questionList.get(quid);
             setQuestionView();
         }else{

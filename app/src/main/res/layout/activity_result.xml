@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tcssi.fragments.Quiz.ResultActivity">
+    tools:context="com.example.tcssi.fragments.Quiz.ResultActivity"
+    android:background="#fcfcfc">
 
     <ImageView
         android:id="@+id/img1"
@@ -19,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your score: "
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -40,6 +42,7 @@
         android:id="@+id/ratingBar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:numStars="5"
         android:stepSize="1"
         android:layout_below="@+id/score"

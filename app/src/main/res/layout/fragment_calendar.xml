@@ -19,7 +19,8 @@
        android:textColor="@color/white"/>
 
 
-    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +31,7 @@
         app:mcv_selectionColor="@color/colorPrimary"
         app:mcv_showOtherDates="all"
         app:mcv_tileHeight="45dp"
-        app:mcv_weekDayTextAppearance="@android:style/TextAppearance.Inverse" />
+        app:mcv_weekDayTextAppearance="@android:style/TextAppearance.Inverse"
+        app:mcv_monthLabels="@color/white"/>
 
 </LinearLayout>

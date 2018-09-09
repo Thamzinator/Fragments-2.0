@@ -44,6 +44,7 @@ dependencies {
     implementation 'com.prolificinteractive:material-calendarview:1.4.2'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'me.anwarshahriar:calligrapher:1.0'
+//    implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:1.0.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

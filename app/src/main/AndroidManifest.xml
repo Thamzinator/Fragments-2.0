@@ -64,7 +64,8 @@
         <activity android:name=".ProfileEditActivity" />
         <activity android:name=".SingleApplication" />
         <activity android:name=".UnivList" />
-        <activity android:name=".Quiz.ResultActivity"></activity>
+        <activity android:name=".Quiz.ResultActivity" />
+        <activity android:name=".SubmitApplication"></activity>
     </application>
 
 </manifest>

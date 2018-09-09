@@ -1,7 +1,7 @@
 package com.example.tcssi.fragments.Quiz;
 
 /**
- * Created by JoseThomas on 3/31/2016.
+ *
  */
 public class Question {
     private int id;

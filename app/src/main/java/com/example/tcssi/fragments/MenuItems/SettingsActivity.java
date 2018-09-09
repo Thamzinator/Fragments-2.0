@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.example.tcssi.fragments.R;
 import com.example.tcssi.fragments.SetupActivity;
+import com.example.tcssi.fragments.SingleApplication;
 import com.example.tcssi.fragments.WalkthroughActivity;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         Button toSetup = (Button) findViewById(R.id.accountSettings);
         Button toWalkThrough = (Button) findViewById(R.id.toWalkThrough);
+        Button toAccom = findViewById(R.id.toAccom);
 
         toWalkThrough.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +36,16 @@ public class SettingsActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(SettingsActivity.this, SetupActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        toAccom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent toAccom = new Intent(SettingsActivity.this, SingleApplication.class);
+                startActivity(toAccom);
+
             }
         });
     }
